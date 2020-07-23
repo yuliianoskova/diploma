@@ -1,0 +1,165 @@
+<div class="guide">
+
+    <div id="gradient-guide"></div>
+
+    <div class="sec-text" id="guideCover">
+        <div id="giudeCoverContainer">
+            <h1 id="guideTitle"><%=guideTitle%></h1>
+            <img id="guideCoverImg" src="<%=guideCoverImg%>" alt="">
+        </div>
+        <div id="guideCoverInfo">
+            <p><%=guideCoverInfo%></p>
+        </div>
+    </div>
+    <div id="guideNavBar">
+        <ul>
+            <li><a href="#transport">TRANSPORT</a></li>
+            <li><a href="#housing">HOUSING</a></li>
+            <li><a href="#sights">SIGHTSEEING</a></li>
+            <li><a href="#cafes">CAFES&RESTAURANTS</a></li>
+            <li><a href="#bars">BARS&CLUBS</a></li>
+            <li><a href="#shopping">SHOPPING</a></li>
+            <li><a href="#info">INFORMATION</a></li>
+        </ul>
+    </div>
+
+    <div class="sec-text" id="guideTransport">
+        <div class="guideTitle">
+            <div class="hr-sect">TRANSPORT</div>
+            <div id="transport" class="guideList">
+                <% transport.forEach(function(transport) { %>
+                <div class="check">
+                    <p><label><img class="textIcon" src="../../../img/icons/airplane.jpg">
+                            <input type="checkbox" class="option-input checkbox" />
+                            <%=transport%></label>
+                    </p>
+                </div> <% }); %>
+            </div>
+        </div>
+        <!-- <img id="imgForTransport" class="guideImgContent" src="<%=imgForTransport%>" alt=""> -->
+
+    </div>
+
+
+    <div class="sec-text" id="guideHousing">
+        <div class="guideTitle">
+            <div id="housing" class="hr-sect">HOUSING</div>
+            <div id="hotels" class="guideList">
+                <% hotels.forEach(function(hotel) { %>
+                <div class="check">
+                    <p><label><b><img class="textIcon" src="../../../img/icons/001-sleeping.svg"><input type="checkbox"
+                                    class="option-input checkbox" />
+                                <%-hotel.name%></b><i> (<%-hotel.addres%>)</i> - <%-hotel.about%></label></p>
+                </div><% }); %>
+
+            </div>
+        </div>
+        <!--<img id="imgForHotels" class="guideImgContent" src="../../../img/TURKEY/istanbul/housing.jpg" alt="">-->
+
+    </div>
+
+
+    <div class="sec-text" id="guideSights">
+        <div class="guideTitle">
+            <div id="sights" class="hr-sect">SIGHTSEEING</div>
+            <div class="guideList">
+                <% sights.forEach(function(sight) { %>
+                <div class="check">
+                    <p><label><img class="textIcon" src="../../../img/icons/006-camera.svg">
+                            <input type="checkbox" class="option-input checkbox" /> <%=sight%></label></p>
+                </div><% }); %>
+
+            </div>
+        </div>
+        <!--<img id="imgForSights" class="guideImgContent" src="../../../img/TURKEY/istanbul/cover.jpg" alt="">-->
+
+    </div>
+
+
+    <div class="sec-text" id="guideCafes">
+        <div class="guideTitle">
+            <div id="cafes" class="hr-sect">CAFES & RESTAURANTS</div>
+            <div class="guideList">
+                <% cafe.forEach(function(cafe) { %>
+                <div class="check">
+                    <p><label><b><img class="textIcon" src="../../../img/icons/001-coffee-break.svg">
+                                <input type="checkbox" class="option-input checkbox" />
+                                <%-cafe.name%></b><i> (<%-cafe.addres%>)</i> - <%-cafe.about%></label></p>
+                </div><% }); %>
+
+            </div>
+        </div>
+        <!--<img id="imgForCafe" class="guideImgContent" src="../../../img/TURKEY/istanbul/cafe.jpg" alt="">-->
+
+    </div>
+
+
+    <div class="sec-text" id="guideBars">
+        <div class="guideTitle">
+            <div id="bars" class="hr-sect">BARS & CLUBS</div>
+            <div class="guideList">
+                <% bar.forEach(function(bar) { %>
+                <div class="check">
+                    <p><label><b><img class="textIcon" src="../../../img/icons/002-cocktail.svg">
+                                <input type="checkbox" class="option-input checkbox" /><%-bar.name%></b>
+                            <i> (<%-bar.addres%>)</i> - <%-bar.about%></label></p>
+                </div><% }); %>
+
+            </div>
+        </div>
+        <!--<img id="imgForBar" class="guideImgContent" src="../../../img/TURKEY/istanbul/bar.jpg" alt="">-->
+
+    </div>
+
+
+    <div class="sec-text" id="guideShopping">
+        <div class="guideTitle">
+            <div id="shopping" class="hr-sect">SHOPPING</div>
+            <div class="guideList">
+                <% shopping.forEach(function(shopping) { %>
+                <div class="check">
+                    <p><label><b><img class="textIcon" src="../../../img/icons/001-gift.svg">
+                                <input type="checkbox" class="option-input checkbox" />
+                                <%-shopping.name%></b><i> (<%-shopping.addres%>)</i> -
+                            <%-shopping.about%></label></p>
+                </div><% }); %>
+
+            </div>
+        </div>
+        <!--<img id="imgForShopping" class="guideImgContent" src="../../../img/TURKEY/istanbul/shopping.jpg" alt="">-->
+
+    </div>
+
+
+    <div class="sec-text" id="guideInfo">
+        <div class="guideTitle">
+            <div id="info" class="hr-sect">INFORMATION</div>
+            <div class="guideList">
+                <% info.forEach(function(info) { %>
+                <div class="check">
+                    <p><label><b><img class="textIcon" src="../../../img/icons/001-info.svg">
+                                <input type="checkbox" class="option-input checkbox" />
+                                <a href="<%=info.addres%>" target="_blank"><%=info.text%></a></b> -
+                            <%-info.about%></label></p>
+                </div><% }); %>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="sec-text" id="sendChecked">
+        <div id="sendCheckedBlock">
+            <div id="sendCheckedTextTitle">
+                <h2><b>Enter your email...</b></h2>
+            </div>
+            <div id="sendCheckedText">
+                <p>...and we'll send you all the checked possitions!</p>
+            </div>
+            <div id="sendCheckedInput">
+                <input id="email" class="input" type="text" placeholder="Enter your email">
+                <button onclick="send()" class="btn btn-secondary right" id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+</div>

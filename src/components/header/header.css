@@ -1,0 +1,106 @@
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#headerLogo{
+    display: flex;
+	align-items: center;
+	padding: 20px 0;
+}
+
+#headerLogo a{
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+	color: rgb(197, 197, 197);
+	
+}
+
+#headerLogo a:hover{
+    text-decoration: none;
+}
+
+
+#headerBar{
+    height: 50px;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+/*#headerNavBar ul li{
+    color: rgb(197, 197, 197);
+}
+
+#headerNavBar ul li a{
+    position: relative;
+	height: 36px;
+	display: block;
+	color: #FF685E;
+	line-height: 36px;
+	text-align: center;
+	text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(187, 186, 186);
+	padding: .1rem 0;
+	margin: 0 10px;
+}
+
+#headerNavBar ul li a:hover{
+    border-bottom: 2px solid #FF685E;
+    text-decoration: none;
+}*/
+
+#headerNavBar ul li {
+    display: inline-block;
+  }
+  #headerNavBar ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+  }
+  #headerNavBar ul li a,
+  #headerNavBar ul li a:after,
+  #headerNavBar ul li a:before {
+    transition: all .5s;
+  }
+  #headerNavBar ul li a:hover {
+    color: white;
+  }
+  
+  
+  /* stroke */
+  #headerNavBar.stroke ul li a {
+    position: relative;
+  }
+  #headerNavBar.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #FF685E;
+    height: 2px;
+  }
+  #headerNavBar.stroke ul li a:hover:after {
+    width: 100%;
+  }
+
+
+@media (max-width: 950px){
+	#headerBar{
+	  width: 90vw;
+  }
+}

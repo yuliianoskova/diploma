@@ -1,0 +1,29 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        color: #20284F;
+}
+
+div.scrollup {
+    position: fixed; 
+    color: white; 
+    background-color: #FF685E; 
+    right: 20px; 
+    bottom: 0px; 
+    padding: 8px 12px; 
+    font-size: 20px; 
+    border-top-left-radius: 4px; 
+    border-top-right-radius: 4px; 
+    cursor: pointer; 
+    display: none; 
+    text-align: center;
+  }
+  div.scrollup:hover {
+    background-color: #FFDCC8; 
+    cursor: pointer; 
+  }
