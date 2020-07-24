@@ -10,23 +10,28 @@ export const error = {
 
 const baseUrl = 'http://localhost:3000';
 
+//создаем модель страницы гайда
 const Model = (options) => {
 
     return {
+
+        //асинхронная функция запрашивает методом fetch параметры страницы из базы данных
         async fetch(params) {
 
-            const resp = await $.ajax({
+
+            const resp = await $.ajax({ //дожидаемся ответа от базы данных
                 url: this.getUrl(params),
                 method: 'GET',
             });
-            this.data = this.parse(resp)
+            this.data = this.parse(resp) //разбиваем полученный ответ
             return this.data;
         },
-        parse(data) {
-            return data;
-        },
+
+        //функция создает путь в базу занных
         getUrl(params) {
+
             let url = this.baseUrl;
+
             if (this.url) {
                 url = `${url}${this.url}`;
             }
@@ -35,6 +40,7 @@ const Model = (options) => {
             }
             return url;
         },
+
         baseUrl,
         ...options
     }

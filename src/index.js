@@ -11,6 +11,7 @@ window.onload = () => {
     routes.goTo('home');
 };
 
+//Кнопка прокрутки стрианицы вверх
 $(function () {
     // при нажатии на кнопку scrollup
     $('.scrollup').click(function () {

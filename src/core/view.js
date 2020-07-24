@@ -17,10 +17,15 @@ export const view = (options) => {
          * @param {jquery object} $toElement - jquery элемент в который вставляем текущий компонент.
          */
 
+        //функция рендерит шаблон к заданому элементу
         render($toElement) {
             this.beforeRender();
             this.$parent = $toElement;
-            this.template = _.template(this.template || `<div></div>`);
+
+            //проверяем, не является ли шаблон функцией
+            if (!_.isFunction(this.template)) {
+                this.template = _.template(this.template || `<div></div>`);
+            }
             const html = this.template(this.model.data);
             this.$el = $(html);
             this.$el.appendTo(this.$parent);
@@ -32,13 +37,17 @@ export const view = (options) => {
 
         afterRender() { },
 
+        //создаем шаблон
         createTemplate() {
             if (!_.isFunction(this.template)) {
                 this.template = _.template(this.template);
             }
         },
 
+        //привязываем событие к контексту
         bindEvents() {
+
+            //проверяем является ли массив массивом
             if (Array.isArray(this.events)) {
                 this.events.forEach(e => {
                     const { event, selector, func } = e;
@@ -49,9 +58,11 @@ export const view = (options) => {
             }
         },
 
+        //получаем элемент по селектору
         getElement(selector) {
             return this.$el.find(selector)
         },
+
         ...options
     }
 };

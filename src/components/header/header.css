@@ -18,12 +18,14 @@
     font-family: 'Great Vibes', cursive;
     font-size: 40px;
     letter-spacing: 2px;
-	color: rgb(197, 197, 197);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgb(73, 73, 73);
 	
 }
 
 #headerLogo a:hover{
     text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -36,29 +38,6 @@
     padding-top: 20px;
 }
 
-/*#headerNavBar ul li{
-    color: rgb(197, 197, 197);
-}
-
-#headerNavBar ul li a{
-    position: relative;
-	height: 36px;
-	display: block;
-	color: #FF685E;
-	line-height: 36px;
-	text-align: center;
-	text-decoration: none;
-    box-sizing: border-box;
-    color: rgb(187, 186, 186);
-	padding: .1rem 0;
-	margin: 0 10px;
-}
-
-#headerNavBar ul li a:hover{
-    border-bottom: 2px solid #FF685E;
-    text-decoration: none;
-}*/
-
 #headerNavBar ul li {
     display: inline-block;
   }
@@ -66,7 +45,8 @@
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: rgb(204, 204, 204);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(73, 73, 73);
   }
   #headerNavBar ul li a,
   #headerNavBar ul li a:after,
@@ -102,5 +82,11 @@
 @media (max-width: 950px){
 	#headerBar{
 	  width: 90vw;
+  }
+}
+
+@media (max-width: 730px){
+	#headerNavBar{
+	  display: none;
   }
 }

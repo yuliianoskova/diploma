@@ -12,10 +12,9 @@ export const header = view({
     template,
     events,
 
+    //функция события: при нажатии на ссылку в хедере, переходим на главную страницу
     navigateTo(e) {
-        e.preventDefault();
-        const currentTarget = $(e.currentTarget);
-        routes.goTo(currentTarget.attr('data-route'));
+        routes.goTo('home');
     }
 
 

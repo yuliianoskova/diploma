@@ -92,3 +92,17 @@
 	  width: 90vw;
   }
 }
+
+@media (max-width: 560px){
+  #footerLogo{
+    display: none;
+}
+
+#footerNav{
+  width: 90vw;
+}
+
+#footerNav ul{
+  justify-content: space-between;
+}
+}
