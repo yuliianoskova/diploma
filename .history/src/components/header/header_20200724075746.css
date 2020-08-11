@@ -78,12 +78,6 @@
     width: 100%;
   }
 
-  @media (min-width: 1420px){
-
-    #headerBar{
-        width: 60vw;
-    } 
-  }
 
 @media (max-width: 950px){
 	#headerBar{

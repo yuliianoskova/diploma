@@ -33,12 +33,12 @@
 
 .carousel-item{
     height: 100vh;
-    width: auto;
+    width: 100vw;
     overflow: hidden;
 }
 
 .carousel-item img{
-    width: auto;
+    width: 100vw;
     height: 100vh;
     display: flex;
     margin: auto;

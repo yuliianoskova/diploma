@@ -80,10 +80,9 @@
 
   @media (min-width: 1420px){
 
-    #headerBar{
+    #aboutUsBlock, #ourServicesBlock, #roteDevider, #stayInTouchBlock, #popularTripsContainer, #contactUsContainer{
         width: 60vw;
     } 
-  }
 
 @media (max-width: 950px){
 	#headerBar{

@@ -33,16 +33,14 @@
 
 .carousel-item{
     height: 100vh;
-    width: auto;
+    width: 100vw;
     overflow: hidden;
 }
 
 .carousel-item img{
     width: auto;
-    height: 100vh;
     display: flex;
     margin: auto;
-    /* object-fit: cover; */
 }
 
 .main{
@@ -491,58 +489,8 @@ width: 350px;
 }
 
 
-@media (min-width: 1420px){
+@media (min-width: 1220px){
 
-    #aboutUsBlock, #ourServicesBlock, #roteDevider, #stayInTouchBlock, #popularTripsContainer, #contactUsContainer{
-        width: 60vw;
-    }
-
-    #ourServicesImg img {
-        width: 140px;
-    }
-
-    #aboutUsMainImg, #contactUsTextBlock, #stayInTouchText, #aboutUsTextBlock, #contactUsPhotoBlock img {
-        width: 400px;
-    }
-
-    #country, #city, #searchBtn{
-        width: 300px;
-        height: 60px;
-        font-size: 26px;
-        
-    }
-
-    #country{
-        border-bottom-left-radius: 8px;
-        border-top-left-radius: 8px;
-        padding-left: 30px;
-        padding-right: 30px;
-        background: #FFF url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1.2rem center/10px 20px;
-    }
-
-    #city{
-        background: #FFF url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 1.2rem center/10px 20px;
-    }
-
-    #searchBtn{
-        border-bottom-right-radius: 8px;
-        border-top-right-radius: 8px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .carousel-indicators li {
-        width: 50px;
-        height: 4px;
-        margin-right: 5px;
-        margin-left: 5px;
-    }
-
-    #country option{
-        font-size: 10px !important;
-        min-height: .5em;
-    }
-    
 }
 
 @media (max-width: 950px){

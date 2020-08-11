@@ -33,16 +33,19 @@
 
 .carousel-item{
     height: 100vh;
-    width: auto;
+    width: 100vw;
     overflow: hidden;
+    box-sizing: content-box;
+
+
 }
 
 .carousel-item img{
     width: auto;
-    height: 100vh;
     display: flex;
     margin: auto;
-    /* object-fit: cover; */
+    box-sizing: border-box;
+    size: cover;
 }
 
 .main{

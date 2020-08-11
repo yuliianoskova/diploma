@@ -33,7 +33,7 @@
 
 .carousel-item{
     height: 100vh;
-    width: auto;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -42,7 +42,6 @@
     height: 100vh;
     display: flex;
     margin: auto;
-    /* object-fit: cover; */
 }
 
 .main{

@@ -33,16 +33,14 @@
 
 .carousel-item{
     height: 100vh;
-    width: auto;
+    width: 100vw;
     overflow: hidden;
 }
 
 .carousel-item img{
     width: auto;
-    height: 100vh;
     display: flex;
     margin: auto;
-    /* object-fit: cover; */
 }
 
 .main{

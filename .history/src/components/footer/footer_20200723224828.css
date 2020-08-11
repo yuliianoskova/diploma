@@ -87,13 +87,6 @@
     color: #f06060;
   }
 
-  @media (min-width: 1420px){
-    #footerContainer{
-      width: 60vw;
-    }
-  }
-
-
 @media (max-width: 950px){
 	#footerContainer{
 	  width: 90vw;

@@ -68,7 +68,7 @@ export const home = view({
 
 });
 
-$('#country').dropdown();
+$('#cd-dropdown').dropdown();
 
 
 
